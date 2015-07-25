@@ -1,0 +1,28 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	controllerName="view.Main" 
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:l="sap.ui.layout"
+	xmlns:custom="view"
+	>
+	<Page title="OpenUI5-CompositeControl">
+		<content>
+			<custom:CompositeControl>
+				<custom:leftItems>
+					<Button text="leftItem1"/>
+					<Button text="leftItem2"/>
+					<Button text="leftItem3"/>
+				</custom:leftItems>
+				<Text text="Lorem ipsum do"/>
+			</custom:CompositeControl>
+			
+			<custom:CompositeControl id="idCompositeControl2">
+				<custom:leftItems>
+					<Button text="AddLeftItem" press="onAddLeftItem"/>
+				</custom:leftItems>
+				<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"/>
+			</custom:CompositeControl>
+		</content>
+	</Page>
+</core:View>
